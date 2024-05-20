@@ -21,6 +21,20 @@ img{
     height:auto;
     display:block
 }
+.imglogo{
+  padding: 80px;
+}
+imglogo :hover{
+    background-color: #77ddbd;
+}
+.imglogo img{
+    border-radius: 100px;
+    height: 300px;
+    width:400px;
+    margin: auto;
+    border-color: #a9d471;
+
+}
 p,h1,h2,h3,h4,h5,h6{
     margin:0
 }
@@ -435,12 +449,25 @@ header .grid-layout nav .nav-list li a:hover{
 #s-experience .grid-layout #experience .option-experience .activeExperience h3{
     font-weight:600
 }
+#s-experience .grid-layout #experience img{
+    height: 200px;
+    width: 200px;
+}
 #s-experience .grid-layout #experience .option-experience>div{
     padding:24px 32px;
     text-align:left;
     background-color:#111;
     border-left:4px solid #111
 }
+/* CSS to style the image */
+
+.image-container {
+    background-color: #111;
+    display: flex;
+    justify-content: center; /* Align content horizontally to the center */
+}
+
+
 #s-experience .grid-layout #experience .option-experience>div:hover{
     cursor:pointer
 }
@@ -455,6 +482,11 @@ header .grid-layout nav .nav-list li a:hover{
     #s-experience .grid-layout #experience .text-experience{
         width:100%
     }
+}
+#s-experience .grid-layout #experience .text-experience>div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between
 }
 #s-experience .grid-layout #experience .text-experience>div{
     display:flex;
@@ -516,20 +548,19 @@ header .grid-layout nav .nav-list li a:hover{
 }
 #s-projects .grid-layout #projects .teslabank:hover {
     margin: 24px 0px;
-    background-color: #65511b;
-    box-shadow: #00a3ff;
-    text-align: left
+    background-color: #095572;
+    box-shadow: #f7f9fa;
+    text-align: left;
 }
 #s-projects .grid-layout #projects .naped:hover {
     margin: 24px 0px;
-    background-color: #276467;
-    box-shadow: #00a3ff;
+    background-color: #0b7046;
+    box-shadow: #f7f9fa;
     text-align: left
 }
 #s-projects .grid-layout #projects .efront:hover {
     margin: 0px 0px;
-    box-shadow: #00a3ff;
-
+    box-shadow: #f7f9fa;
     background-color: #313e6e;
     text-align: left
 }
@@ -654,8 +685,23 @@ header .grid-layout nav .nav-list li a:hover{
     transform:scaleX(1);
     transform-origin:bottom left
 }
+#s-projects .grid-layout #projects .blogsec:hover {
+    margin: 24px 0px;
+    background-color: #02080a;
+    box-shadow: #f7f9fa;
+    text-align: left;
+}
+.img-container {
+  height: 400px;
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  gap: 10px; /* Optional: space between the images */
+}
 
-/* SKILLS */
+.img-container img {
+  width: 50%; /* Adjust width as needed */
+  display: inline-flex;
+}
 
 #s-skills{
     padding:96px 48px;
@@ -666,6 +712,7 @@ header .grid-layout nav .nav-list li a:hover{
         padding:48px 24px
     }
 }
+
 #s-skills .grid-layout #skills{
     display:flex;
     justify-content:space-between;
@@ -845,14 +892,14 @@ footer div{
   height: 400px; /* Set a fixed height for the images */
   object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
 }
-.card:hover {
-  transform: scale(0.95); /* Scale the card on hover */
-}
+
 /* CSS for equal height cards */
 .card-body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 25px;
 }
+
 
 
